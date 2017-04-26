@@ -1,0 +1,177 @@
+{% include head.html %}
+
+{% include header.html %}
+
+<div class="layout-container--tight layout-container--push">
+
+  <div id="readme" class="markdown">
+
+    <h1 id="documentation">Documentation</h1>
+
+    <div class="docs">
+
+      <ul class="nav nav-tree nav--docs nav--offset">
+        <!--<li class="nav-tree__item nav--docs__item nav--docs__quick-start">
+          <a href="/docs/quick-start" class="nav-tree__item__link">Quick start guide</a>
+          {% if page.section == "quick-start" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_quick-start %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/quick-start/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>-->
+        <li class="nav-tree__item nav--docs__item nav--docs__nodejs">
+          <a href="/docs/nodejs/" class="nav-tree__item__link">Snyk for Node.js</a>
+          {% if page.section == "nodejs" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_nodejs %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/nodejs/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__ruby">
+          <a href="/docs/ruby/" class="nav-tree__item__link">Snyk for Ruby</a>
+          {% if page.section == "ruby" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_ruby %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/ruby/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__java">
+          <a href="/docs/java/" class="nav-tree__item__link">Snyk for Java</a>
+          {% if page.section == "java" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_java %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/java/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__orgs">
+          <a href="/docs/orgs/" class="nav-tree__item__link">Organisations</a>
+          {% if page.section == "orgs" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_orgs %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/orgs/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__github">
+          <a href="/docs/github/" class="nav-tree__item__link">GitHub integration</a>
+          {% if page.section == "github" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_github %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/github/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__using-snyk">
+          <a href="/docs/using-snyk/" class="nav-tree__item__link">Snyk CLI</a>
+          {% if page.section == "using-snyk" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_using-snyk %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/using-snyk/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__broker">
+          <a href="/docs/broker/" class="nav-tree__item__link">GitHub Enterprise</a>
+          {% if page.section == "broker" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_broker %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/broker/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__ci">
+          <a href="/docs/ci/" class="nav-tree__item__link">CI integration</a>
+          {% if page.section == "ci" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_ci %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/ci/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__bitbucket">
+          <a href="/docs/bitbucket/" class="nav-tree__item__link">Bitbucket Pipelines</a>
+          {% if page.section == "bitbucket" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_bitbucket %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/bitbucket/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__slack-integration">
+          <a href="/docs/slack-integration/" class="nav-tree__item__link">Slack Integration</a>
+          {% if page.section == "slack-integration" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_slack-integration %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/slack-integration/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__security">
+          <a href="/docs/security/" class="nav-tree__item__link">Security</a>
+          {% if page.section == "security" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_security %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/orgs/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__badges">
+          <a href="/docs/badges/" class="nav-tree__item__link">Badges</a>
+          {% if page.section == "badges" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_badges %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/orgs/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__faqs">
+          <a href="/docs/faqs/" class="nav-tree__item__link">FAQs</a>
+          {% if page.section == "faqs" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_faqs %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/faqs/#{{article.slug}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+      </ul>
+
+      {% if page.title %}<h1 class="title">{{page.title}}</h1>{% endif %}
+  
+      
+
+      {% if page.section == "landing" %}
+      {% for article in site.docs_landing %}
+      {% if article.draft %}<div class="status--draft">{% endif %}
+        {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
+        {{ article.content | markdownify }}
+      {% if article.draft %}</div><!-- .status--draft -->{% endif %}
+      {% endfor %}
+      {% endif %}
+
+    </div>
+
+  </div>
+
+</div>
+
+{% include footer.html %}
+
+{% include foot.html %}
