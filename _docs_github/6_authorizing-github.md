@@ -10,9 +10,9 @@ When granting Snyk access to GitHub, you can choose to:
 
 This is for all GitHub organisations you have sufficient permissions for.
 
-Note that granting access will test your repositories for vulnerabilities only once - it won't automatically set webhooks or enable continuous monitoring.
+![Repo access permissions](https://res.cloudinary.com/snyk/image/upload/c_scale,h_358/v1493730357/docs/GH_repository_access.png)
 
-![Repo access permissions](https://res.cloudinary.com/snyk/image/upload/c_scale,h_358/v1482163908/docs/GH_repository_access.png)
+If you want to change your permissions at another point in time, you can do so by going to Settings, Integrations and selecting GitHub from the list.
 
 ### GitHub organisations
 
