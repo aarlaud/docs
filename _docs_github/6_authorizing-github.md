@@ -12,7 +12,7 @@ This is for all GitHub organisations you have sufficient permissions for.
 
 ![Repo access permissions](https://res.cloudinary.com/snyk/image/upload/c_scale,h_358/v1493730357/docs/GH_repository_access.png)
 
-If you want to change your permissions at another point in time, you can do so from the integration settings page for GitHub.
+If you want to change your permissions at another point in time, you can do so by going to Settings, Integrations and selecting GitHub from the list.
 
 ### GitHub organisations
 
