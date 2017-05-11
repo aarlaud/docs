@@ -41,8 +41,12 @@ Check our [GitHub Enterprise documentation](https://snyk.io/docs/snyk-broker/). 
 
 You can find out more about our security process and disclosure policy in our [security documentation](https://snyk.io/docs/security/).
 
-## Frequently Asked Questions
+## We're here to help!
 
-Our [FAQs](https://snyk.io/docs/faqs/) answer questions you might have about known vulnerabilities, fixing vulnerabilities, using Snyk behind a proxy, and more.
+### Support
 
-**Need help with anything you can’t find here?** [Drop us a line](mailto:support@snyk.io) and we’ll get right back to you.
+If you have any questions that need answering, you might find an answer on our [support section](https://support.snyk.io).
+
+### Need help with anything you can’t find here?
+
+[Drop us a line](mailto:support@snyk.io) and we’ll get right back to you.
