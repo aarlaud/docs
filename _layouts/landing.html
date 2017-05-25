@@ -142,14 +142,7 @@
           {% endif %}
         </li>
         <li class="nav-tree__item nav--docs__item nav--docs__faqs">
-          <a href="/docs/faqs/" class="nav-tree__item__link">FAQs</a>
-          {% if page.section == "faqs" %}
-          <ul class="nav-tree__branch">{% for article in site.docs_faqs %}{% if article.title == "" %}{% else %}
-            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
-              <a href="/docs/faqs/#{{article.slug}}" class="nav-tree__item__link">{{article.title}}</a>
-            </li>{% endif %}{% endfor %}
-          </ul>
-          {% endif %}
+          <a href="https://support.snyk.io/" class="nav-tree__item__link">FAQs</a>
         </li>
       </ul>
 
