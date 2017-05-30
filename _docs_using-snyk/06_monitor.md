@@ -18,6 +18,11 @@ Captured a snapshot of this project's dependencies. Explore this snapshot at htt
 Notifications about newly disclosed vulnerabilities related to these dependencies will be emailed to you.</pre>
 </div>
 
+<h3>Specifiying which organisation for monitoring</h3>
+<p>If you have several <a href="https://snyk.io/docs/orgs">organisations set up in Snyk</a>, running <code>snyk monitor</code> will associate the generated snapshot to your "default" (personal) organization. To specify a different organisation, you can use the <code>--org</code> option.</p>
+
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">snyk monitor --org=my-org-name</span></code></pre></div>
+
 <h3>Monitor a Maven project with variables</h3>
 <p>You can pass variables to <code>snyk monitor</code> running on Maven projects. This is useful when you want to monitor a specific profile, or pass system properties. This is done by sending flags after a double-dash option when running <code>snyk monitor</code>. Note that all flags after the double-dash option will be used as Maven flags.</p>
 <p>For example, suppose you want to monitor a specific Maven profile: <code>prod</code>. Running the following will monitor this profile:</p>

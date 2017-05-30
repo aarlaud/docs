@@ -10,3 +10,9 @@ To continuously avoid known vulnerabilities in your Ruby or Java dependencies, i
 
 To stay secure over time, Snyk alerts you about newly disclosed vulnerabilities that affect your project's dependencies.
 To make sure the list of dependencies we have for your project is up to date, refresh it continuously by running `snyk monitor` in your deployment process.
+
+Running `snyk monitor` will associate the snapshot with your default organisation. We highly recommend explicitly specifying which organisation you would like the snapshot associated with using the `--org` option.
+
+```
+snyk monitor --org=my-org-name
+```
