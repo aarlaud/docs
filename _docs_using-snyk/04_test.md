@@ -10,7 +10,7 @@ title: Test
 <p><code>snyk test</code> takes stock of all the local dependencies and queries the snyk service for related known vulnerabilities. It displays the found issues along with additional information. For Node.js projects, it also suggests remediation steps.</p>
 
 <p>When <code>snyk test</code> runs, it tries to detect the appropriate file for your project by looking for the following files, in this order:</p>
-<ol><li>yarn.lock</li><li>package.json</li><li>Gemfile</li><li>Gemfile.lock</li><li>pom.xml</li></ol>
+<ol><li>yarn.lock</li><li>package.json</li><li>Gemfile</li><li>Gemfile.lock</li><li>pom.xml</li><li>requirements.txt</li></ol>
 
 <p>When testing locally, you can specify the file that Snyk should inspect for package information.</p>
 
