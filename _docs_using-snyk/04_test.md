@@ -47,9 +47,11 @@ Since <code>snyk test</code> looks at the locally installed modules, it needs to
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">snyk test lodash</span>
 <span class="go">snyk test ionic@1.6.5</span></code></pre></div>
 
-<h3>Test a Maven project with variables</h3>
-<p>You can pass variables to <code>snyk test</code> running on Maven projects. This is useful when you want to test a specific profile, or pass system properties. This is done by sending flags after a double-dash option when running <code>snyk test</code>. Note that all flags after the double-dash option will be used as Maven flags.</p>
+<h3>Test a Maven or Gradle project with variables</h3>
+<p>You can pass variables to <code>snyk test</code> running on Maven or Gradle projects. This is useful when you want to test a specific profile (in Maven) or configuration (in Gradle), or pass system properties. This is done by sending flags after a double-dash option when running <code>snyk test</code>. Note that all flags after the double-dash option will be used as Maven or Gradle flags.</p>
 <p>For example, suppose you want to test a specific Maven profile: <code>prod</code>. Running the following will test this profile:</p>
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">snyk test -- -Pprod</span></code></pre></div>
 <p>In another example, if you use a system property in your pom.xml file, e.g: <code>&lt;version&gt;${pkg_version}&lt;/version&gt;</code>, you can define the system property in <code>snyk test</code> as follows:
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">snyk test -- -Dpkg_version=1.4</span></code></pre></div>
+<p>For testing a Gradle project with test dependencies, you would be able to pass the appropriate configuration to <code>snyk test</code>:
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">snyk test -- --configuration testCompile</span></code></pre></div>
