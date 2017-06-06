@@ -45,3 +45,4 @@ collections:
   - docs_nodejs
   - docs_heroku
   - docs_aws-lambda
+  - docs_cloud-foundry
