@@ -63,6 +63,16 @@ layout:
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
   },
+  {% endfor %}{% assign python = site.docs_python | where: 'draft', 'false' %}{% for article in python %}
+  {
+    {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    {% endif %}"docs_python" : "true",
+    "topic" : "python",
+    "topicSlug" : "snyk-for-python",
+    "url"     : "/docs/python/{{ article.title | slugify }}",{% if article.title %}
+    "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
+    "content": {{ article.content | jsonify }}
+  },
   {% endfor %}{% assign nodejs = site.docs_nodejs | where: 'draft', 'false' %}{% for article in nodejs %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
