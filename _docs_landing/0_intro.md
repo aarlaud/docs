@@ -10,11 +10,14 @@ languages:
   - name: "Java"
     logo: "https://res.cloudinary.com/snyk/image/upload/v1495652282/java-logo.svg"
     link: "/docs/snyk-for-java"
+  - name: "Python"
+    logo: "http://res.cloudinary.com/snyk/image/upload/v1496763164/python-logo.svg"
+    link: "/docs/snyk-for-python"
 ---
 
 <!-- <div class="alert alert--inline u--centered"><b class="h3">Snyk continuously finds and fixes vulnerabilities in your dependencies.</b></div> -->
 
-<div class="layout-cols layout-cols--3 u--centered">
+<div class="layout-cols u--centered">
     
     {% for lang in page.languages %}
     <div class="layout-cols__item">
