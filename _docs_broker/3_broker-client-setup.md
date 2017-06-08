@@ -12,7 +12,7 @@ To set up and run a Snyk broker client:
 
 2. Initialise the broker for use with Snyk
 
-     `$ broker init snyk`
+     `$ broker init github`
 
    This will generate two files:
      - ".env"        : the brokers configuration
