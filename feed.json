@@ -43,6 +43,26 @@ layout:
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
   },
+  {% endfor %}{% assign cloud-foundry = site.docs_cloud-foundry | where: 'draft', 'false' %}{% for article in cloud-foundry %}
+  {
+    {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    {% endif %}"docs_cloud-foundry" : "true",
+    "topic" : "cloud-foundry",
+    "topicSlug" : "cloud-foundry",
+    "url"     : "/docs/cloud-foundry/{{ article.title | slugify }}",{% if article.title %}
+    "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
+    "content": {{ article.content | jsonify }}
+  },
+  {% endfor %}{% assign pivotal-web-services = site.docs_pivotal-web-services | where: 'draft', 'false' %}{% for article in pivotal-web-services %}
+  {
+    {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    {% endif %}"docs_pivotal-web-services" : "true",
+    "topic" : "pivotal-web-services",
+    "topicSlug" : "pivotal-web-services",
+    "url"     : "/docs/pivotal-web-services/{{ article.title | slugify }}",{% if article.title %}
+    "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
+    "content": {{ article.content | jsonify }}
+  },
   {% endfor %}{% assign java = site.docs_java | where: 'draft', 'false' %}{% for article in java %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
