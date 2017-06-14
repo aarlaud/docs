@@ -22,6 +22,7 @@
     {% if page.section == "using-snyk" %}docs--using-snyk{% endif %}
     {% if page.section == "broker" %}docs--broker{% endif %}
     {% if page.section == "github" %}docs--github{% endif %}
+    {% if page.section == "bitbucket-server" %}docs--bitbucket-server{% endif %}
     {% if page.section == "orgs" %}docs--orgs{% endif %}
     {% if page.section == "security" %}docs--security{% endif %}
     {% if page.section == "badges" %}docs--badges{% endif %}
@@ -317,6 +318,15 @@
 
       {% if page.section == "github" %}
       {% for article in site.docs_github %}
+      {% if article.draft %}<div class="status--draft">{% endif %}
+        {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
+        {{ article.content | markdownify }}
+      {% if article.draft %}</div><!-- .status--draft -->{% endif %}
+      {% endfor %}
+      {% endif %}
+
+      {% if page.section == "bitbucket-server" %}
+      {% for article in site.docs_bitbucket-server %}
       {% if article.draft %}<div class="status--draft">{% endif %}
         {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
         {{ article.content | markdownify }}
