@@ -133,6 +133,16 @@ layout:
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
   },
+  {% endfor %}{% assign bitbucket-server = site.docs_bitbucket-server | where: 'draft', 'false' %}{% for article in bitbucket-server %}
+  {
+    {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    {% endif %}"docs_bitbucket-server" : "true",
+    "topic" : "bitbucket-server",
+     "topicSlug" : "bitbucket-server",
+     "url"     : "/docs/bitbucket-server/{{ article.title | slugify }}",{% if article.title %}
+     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
+     "content": {{ article.content | jsonify }}
+  },
   {% endfor %}{% assign ci = site.docs_ci | where: 'draft', 'false' %}{% for article in ci %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
