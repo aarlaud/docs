@@ -1,8 +1,8 @@
 ---
-title: Disclosure policy
+title: Open Source Packages Disclosure policy
 ---
 
-We at snyk value the security community and believe that responsible disclosure of security vulnerabilities helps us ensure the security and privacy of the users.
+We at snyk value the security community and believe that responsible disclosure of security vulnerabilities in open source packages helps us ensure the security and privacy of the users.
 ​
 A responsible disclosure program includes a policy with clear and simple rules of engagement for security researchers to report vulnerabilities they discover. It protects both the developer and researcher, while allowing developers to safely benefit from vulnerabilities discovered by researchers.
 ​
