@@ -32,6 +32,10 @@ ignore ............. Ignore an issue. For more help run `snyk help ignore`.
 --ignore-policy .... Ignores and resets the state of your policy file.
 --trust-policies ... Applies and uses ignore rules from your dependencies' Snyk policies,
                      otherwise ignore policies are only shown as a suggestion.
+--show-vulnerable-paths=<boolean>
+                     Display the dependency paths from the top level
+                     dependencies, down to the vulnerable packages (defaults
+                     to true). Applicable to `snyk test`.
 --dry-run .......... Don't apply updates or patches during protect.
 -q, --quiet ........ Silence all output.
 -h, --help ......... This help information.
@@ -44,6 +48,8 @@ ignore ............. Ignore an issue. For more help run `snyk help ignore`.
   $ snyk test
   $ snyk test ionic@1.6.5
   $ snyk monitor --org=my-team
+  $ snyk test --show-vulnerable-paths=false
+
 ```
 
 <p class="layout-aside backdrop-glowing u--push-bottom-l u--push-top-l">
