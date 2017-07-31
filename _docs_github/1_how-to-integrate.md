@@ -2,7 +2,7 @@
 title: How to integrate GitHub to test and watch your repositories
 ---
 
-You can add your Node.js, Ruby and Java GitHub repos and quickly test them, or decide which ones you’d like to continously watch with Snyk.
+You can add your Node.js, Ruby, Python and Java GitHub repos and quickly test them, or decide which ones you’d like to continously watch with Snyk.
 
 ![Adding your GH repos](http://res.cloudinary.com/snyk/image/upload/w_800/v1493817321/docs/choose_github_repos.png)
 
