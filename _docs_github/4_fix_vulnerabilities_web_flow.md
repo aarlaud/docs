@@ -1,6 +1,7 @@
 ---
 title: Fix vulnerabilities with Snyk pull requests
 ---
+*Note: Currently for Node.js and Ruby only*
 
 When viewing a Snyk test report for a repo that you own, or when looking at a project that you are watching with Snyk, you’ll see two options for fixing a vulnerability:
 

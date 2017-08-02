@@ -10,7 +10,7 @@ title: Test
 <p><code>snyk test</code> takes stock of all the local dependencies and queries the snyk service for related known vulnerabilities. It displays the found issues along with additional information. For Node.js projects, it also suggests remediation steps.</p>
 
 <p>When <code>snyk test</code> runs, it tries to detect the appropriate file for your project by looking for the following files, in this order:</p>
-<ol><li>yarn.lock</li><li>package.json</li><li>Gemfile</li><li>Gemfile.lock</li><li>pom.xml</li><li>requirements.txt</li></ol>
+<ol><li>yarn.lock</li><li>package.json</li><li>Gemfile</li><li>Gemfile.lock</li><li>pom.xml</li><li>requirements.txt</li><li>build.gradle</li><li>build.sbt</li></ol>
 
 <p>When testing locally, you can specify the file that Snyk should inspect for package information.</p>
 
@@ -22,11 +22,20 @@ title: Test
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">cd ~/projects/</span>
 <span class="go">snyk test *</span></code></pre></div>
 
-<p>Note for Node.js: <br>
+<p><strong>Note for Node.js:</strong> <br>
 Since <code>snyk test</code> looks at the locally installed modules, it needs to run after <code>npm install</code> or <code>yarn install</code>, and will seamlessly work with <code>shrinkwrap</code>, npm enterprise or any other custom installation logic you have.</p>
 
-<p>Note for Java: <br>
+<p><strong>Note for Java:</strong> <br>
 Since <code>snyk test</code> looks at the locally installed modules, it needs to run after <code>mvn install</code>.</p>
+
+**Note for Scala:** In order to use the CLI to test against your `build.sbt` manifest file, you'll need to first install the [sbt-dependency-graph plugin](https://github.com/jrudolph/sbt-dependency-graph).
+
+Running `snyk test` on your Scala projects without this plugin will throw the following error:
+
+```
+Error: Missing plugin `sbt-dependency-graph` (https://github.com/jrudolph/sbt-dependency-graph).
+Please install it globally or on the current project and try again.
+```
 
 <h3>Test a public GitHub repository</h3>
 <p>To test a public Github repository, run <code>snyk test</code> and include the Github URL to the repo.</p>
