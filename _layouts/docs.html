@@ -83,7 +83,7 @@
         </li>
         <li class="nav-tree__item nav--docs__item nav--docs__python">
           <a href="/docs/scala/" class="nav-tree__item__link">Snyk for Scala</a>
-          {% if page.section == "python" %}
+          {% if page.section == "scala" %}
           <ul class="nav-tree__branch">{% for article in site.docs_python %}{% if article.title == "" %}{% else %}
             <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
               <a href="/docs/scala/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
