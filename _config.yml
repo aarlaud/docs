@@ -41,7 +41,8 @@ collections:
   - docs_slack-integration
   - docs_broker
   - docs_java
-  - docs_python
+  - docs_python 
+  - docs_scala
   - docs_ruby
   - docs_nodejs
   - docs_heroku

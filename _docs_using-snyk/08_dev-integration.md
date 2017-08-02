@@ -16,6 +16,12 @@ title: Integrating Snyk into your dev workflow
 1. Install the Snyk utility using `npm install -g snyk`.
 2. Add `snyk test` to your CI test platform
 
+<h3>For Scala</h3>
+
+1. Install the Snyk utility using `npm install -g snyk`.
+2. Install the [sbt-dependency-graph plugin](https://github.com/jrudolph/sbt-dependency-graph).
+2. Add `snyk test` to your CI test platform
+
 <h3>Setting up automatic monitoring</h3>
 If you monitor a project with Snyk, you'll get notified if your project's dependencies are affected by newly disclosed vulnerabilities. To make sure the list of dependencies we have for your project is up to date, refresh it continuously by running `snyk monitor` in your deployment process.
 

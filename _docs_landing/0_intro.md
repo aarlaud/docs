@@ -13,6 +13,9 @@ languages:
   - name: "Python"
     logo: "http://res.cloudinary.com/snyk/image/upload/v1496763164/python-logo.svg"
     link: "/docs/snyk-for-python"
+  - name: "Scala"
+    logo: "http://res.cloudinary.com/snyk/image/upload/v1501680205/scala-logo.svg"
+    link: "/docs/snyk-for-scala"
 ---
 
 <!-- <div class="alert alert--inline u--centered"><b class="h3">Snyk continuously finds and fixes vulnerabilities in your dependencies.</b></div> -->
