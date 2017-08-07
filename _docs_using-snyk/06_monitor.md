@@ -13,9 +13,9 @@ title: Monitor
 
 <div class="screenshot">
 <h3 class="screenshot__label">Example output</h3>
-<pre class="code">$ snyk monitor
+<pre><code>$ snyk monitor
 Captured a snapshot of this project's dependencies. Explore this snapshot at https://snyk.io/monitor/1a53f19a-f64f-44ab-b122-74ce82c1c34b
-Notifications about newly disclosed vulnerabilities related to these dependencies will be emailed to you.</pre>
+Notifications about newly disclosed vulnerabilities related to these dependencies will be emailed to you.</code></pre>
 </div>
 
 <h3>Specifiying which organisation for monitoring</h3>

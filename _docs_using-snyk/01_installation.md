@@ -18,7 +18,7 @@ As you can see, Snyk found and reported several vulnerabilities in the package. 
 
 <div class="screenshot">
 <h3 class="screenshot__label">Example output</h3>
-<pre class="code">$ snyk test
+<pre><code>$ snyk test
 <span class="syn--red">✗ High severity vulnerability found on minimatch@0.3.0</span>
 - desc: Regular Expression Denial of Service
 - info: https://snyk.io/vuln/npm:minimatch:20160620
@@ -35,5 +35,5 @@ As you can see, Snyk found and reported several vulnerabilities in the package. 
 - desc: Root Path Disclosure
 - info: https://snyk.io/vuln/npm:send:20151103
 - from: ionic@2.1.17 > serve-static@1.7.1 > send@0.10.1
-<span class="syn--white syn--bold">Upgrade direct dependency serve-static@1.7.1 to serve-static@1.8.1 (triggers upgrades to send@0.11.1)</span></pre>
+<span class="syn--white syn--bold">Upgrade direct dependency serve-static@1.7.1 to serve-static@1.8.1 (triggers upgrades to send@0.11.1)</span></code></pre>
 </div>

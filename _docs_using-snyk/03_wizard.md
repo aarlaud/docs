@@ -26,7 +26,7 @@ First, it takes stock of which dependencies are locally installed, queries the s
 
 <div class="screenshot">
 <h3 class="screenshot__label">Example output</h3>
-<pre class="code">$ snyk wizard
+<pre><code>$ snyk wizard
 
 Snyk's wizard will:
 
@@ -52,7 +52,7 @@ Tested 446 dependencies for known vulnerabilities, <span class="syn--red syn--bo
 <span class="syn--blue">❯ Re-install falcor-router-demo@1.0.5 (triggers upgrade to minimatch@3.0.2, tough-cookie@2.3.0) </span>
   Review vulnerabilities separately
   Set to ignore for 30 days (updates policy)
-  Skip</pre>
+  Skip</code></pre>
 </div>
 
 <p>Once all the issues are addressed, <code>snyk wizard</code> will optionally integrate some tests and protection steps into your <code>package.json</code> file:
