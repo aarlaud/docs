@@ -6,4 +6,7 @@ ignore:
     - '* > github-pages@138':
         reason: No fix available
         expires: '2018-06-21T17:04:06.570Z'
+    - '* > github-pages@161':
+        reason: None given
+        expires: '2017-10-24T08:13:34.621Z'
 patch: {}
