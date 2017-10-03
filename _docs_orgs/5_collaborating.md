@@ -2,12 +2,12 @@
 title: Collaborating with team members
 ---
 
-Go to the ‘Members’ tab in the ‘Manage organisation’ section to invite new team members.
+Go to the ‘Members’ tab in the ‘Settings’ section to invite new team members.
 
 * The Free plan only has administrators.
 * The Pro and Enterprise plan have administrators and collaborators.
 
-![Team members](https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v1466629385/docs-collaborate_scaled.jpg)
+![Team members](https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_834/v1506958612/docs/org-members.png)
 
 <table class="table-responsive">
   <thead>
